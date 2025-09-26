@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glassmorphism blur */
+.animate-blur-custom {
+  background-color: #ecf0f350; /* Fondo translúcido */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+.animate-blur-custom-con-amazonia {
+  background-color: #0e311d7b; /* Fondo translúcido */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+html, body {
+  overflow-x: hidden;
+}
+
+/* Oculta el scrollbar en todos los navegadores */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE y Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 10px; /* Ancho del scrollbar */
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: white; /* Fondo blanco */
+  border-radius: 9999px;
+  margin: 4px 0; /* Espacio vertical opcional */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #8BC34A; /* Verde */
+  border-radius: 9999px;
+  border: 2px solid white; /* Borde blanco */
+}
